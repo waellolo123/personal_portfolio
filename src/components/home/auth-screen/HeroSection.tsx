@@ -1,5 +1,7 @@
 import Image from "next/image";
 import AuthButtons from "./AuthButtons";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 
 const HeroSection = () => {
@@ -13,7 +15,11 @@ const HeroSection = () => {
         <h1 className="text-2xl md:text-3xl text-balance">Hey! Learn <span className="bg-stone-800 px-2 font-bold text-white">Follow</span> and Support.</h1>
         <p className="text-2xl md:text-3xl mb-32 leading-snug text-balance">Follow <span className="bg-sky-400 font-bold px-2 text-white">Creators</span> And <span className="bg-red-500 px-2 font-bold text-white"> Professionals</span></p>
         {/* auth buttons */}
-        <AuthButtons />
+        {/* <AuthButtons /> */}
+        {/* go to my home page button */}
+        <Button>
+          <Link href={"/home-screen"}>Go to my Home page</Link>
+        </Button>
       </div>
      </div> 
      <div className="flex-1 relative overflow-hidden justify-center items-center hidden md:flex">

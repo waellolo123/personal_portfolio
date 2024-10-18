@@ -53,14 +53,14 @@ const Sidebar = async () => {
           </Link>
         )}
         <DropdownMenu>
-          <div className="flex w-12 lg:w-full items-center gap-2 hover:bg-primary-foreground font-bold hover:text-primary px-2 py-1 rounded-full justify-center lg:justify-normal">
+          <div className="flex w-12 lg:w-full items-center gap-2 hover:bg-primary-foreground font-bold  hover:text-primary px-2 py-1 rounded-full justify-center lg:justify-normal">
            <DropdownMenuTrigger className="flex items-center lg:gap-2">
             <User className="w-6 h-6" />
             <span className="hidden lg:block">Settings</span>
             <ArrowDown01 className="w-6 h-6 lg:ml-2" />
            </DropdownMenuTrigger> 
           </div>
-          <DropdownMenuContent>
+          <DropdownMenuContent className="bg-white">
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
               <Link href={"#"}><DropdownMenuItem>Billing</DropdownMenuItem></Link>
