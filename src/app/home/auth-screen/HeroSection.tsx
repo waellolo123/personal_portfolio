@@ -19,7 +19,7 @@ const HeroSection = () => {
         {/* <AuthButtons /> */}
         {/* go to my home page button */}
         <Button>
-          <Link href="/home/home-screen">Go to my Home page</Link>
+          <Link href="/">Go to my Home page</Link>
         </Button>
       </div>
      </div> 
